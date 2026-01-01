@@ -142,7 +142,6 @@
     </div>
 
     <!-- Navbar -->
-    <!-- Alterado de fixed top-8 para sticky top-0 para corrigir o gap na rolagem -->
     <nav class="sticky top-0 w-full z-40 bg-tech-black/90 backdrop-blur border-b border-gray-800 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
@@ -165,7 +164,6 @@
     </nav>
 
     <!-- Hero Section -->
-    <!-- Removido pt-40 pois o nav agora ocupa espaço no fluxo (sticky) -->
     <header class="relative pt-20 pb-20 lg:pt-32 lg:pb-32 overflow-hidden">
         <!-- Luzes de Fundo -->
         <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-med-green rounded-full blur-[150px] opacity-10 pointer-events-none"></div>
@@ -203,9 +201,7 @@
 
                 <!-- Imagem Principal -->
                 <div class="relative order-1 lg:order-2 opacity-0 animate-fade-up" style="animation-delay: 0.3s;">
-                    <!-- Ajustei aqui de max-w-md para max-w-xs para reduzir o tamanho e melhorar a nitidez -->
                     <div class="relative z-10 w-full max-w-xs mx-auto animate-float">
-                        <!-- Moldura Tech -->
                         <div class="absolute -inset-1 bg-gradient-to-r from-med-green to-transparent rounded-[2rem] opacity-30 blur"></div>
                         <div class="relative rounded-[2rem] overflow-hidden shadow-neon border border-gray-800 bg-tech-card aspect-[4/5]">
                              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSexNOME6ZZy4LjbTXgA6MkBYMbaKS7Dihbyw&s" 
@@ -214,7 +210,6 @@
                              
                              <div class="absolute inset-0 bg-gradient-to-t from-tech-black via-transparent to-transparent opacity-90"></div>
 
-                             <!-- Badge Flutuante -->
                              <div class="absolute bottom-6 left-6 right-6 bg-black/80 backdrop-blur border border-med-green/30 p-4 rounded-xl">
                                  <p class="text-white font-serif text-lg italic">"Vou te ensinar a vencer a prova, não apenas a matéria."</p>
                                  <p class="text-med-green text-[10px] font-bold uppercase mt-2 tracking-widest">— Dr. Marcos Leoncio</p>
@@ -244,7 +239,7 @@
         </div>
     </div>
 
-    <!-- Metodologia (Cards Dark) -->
+    <!-- Metodologia -->
     <section class="py-24 relative">
         <div class="max-w-7xl mx-auto px-4 text-center mb-16">
             <span class="text-med-green font-bold tracking-widest uppercase text-xs mb-3 block">Diferenciais Exclusivos</span>
@@ -288,9 +283,8 @@
         </div>
     </section>
 
-    <!-- Oferta Principal Dark -->
+    <!-- Oferta Principal -->
     <section class="py-32 relative overflow-hidden bg-tech-dark border-t border-gray-800">
-        <!-- Elemento de fundo -->
         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-med-green/5 rounded-full blur-3xl pointer-events-none"></div>
 
         <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
@@ -326,7 +320,7 @@
         </div>
     </section>
 
-    <!-- Footer Dark -->
+    <!-- Footer -->
     <footer class="bg-black text-white pt-20 pb-10 border-t border-gray-900">
         <div class="max-w-7xl mx-auto px-4">
             <div class="grid md:grid-cols-4 gap-12 mb-16">
@@ -369,9 +363,7 @@
         </div>
     </footer>
 
-    <!-- ==================== MODAIS INFORMATIVOS (DARK) ==================== -->
-
-    <!-- Modal Sobre Mim -->
+    <!-- Modais Informativos -->
     <div id="modal-sobre" class="modal-overlay fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/90 backdrop-blur-sm" onclick="closeModals(event)">
         <div class="modal-content bg-tech-card border border-gray-800 w-full max-w-2xl rounded-2xl relative shadow-neon overflow-hidden" onclick="event.stopPropagation()">
             <div class="p-8">
@@ -388,7 +380,6 @@
         </div>
     </div>
 
-    <!-- Modal Depoimentos -->
     <div id="modal-depoimentos" class="modal-overlay fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/90 backdrop-blur-sm" onclick="closeModals(event)">
         <div class="modal-content bg-tech-card border border-gray-800 w-full max-w-2xl rounded-2xl relative shadow-neon overflow-hidden" onclick="event.stopPropagation()">
             <div class="p-8">
@@ -402,57 +393,12 @@
                         <p class="text-gray-300 text-sm mb-3">"O Dr. Marcos não ensina só matéria, ele ensina malícia de prova. Passei na USP graças ao módulo de neuro memorização."</p>
                         <p class="text-gray-500 text-xs font-bold uppercase">- Lucas Mendes, Aprovado em 2023</p>
                     </div>
-                    <div class="bg-black p-4 rounded-xl border border-gray-800">
-                        <div class="flex text-med-green mb-2">★★★★★</div>
-                        <p class="text-gray-300 text-sm mb-3">"Melhor investimento que fiz. O banco de questões comentado é absurdo de bom. Vale cada centavo."</p>
-                        <p class="text-gray-500 text-xs font-bold uppercase">- Ana Clara, Médica Residente</p>
-                    </div>
-                     <div class="bg-black p-4 rounded-xl border border-gray-800">
-                        <div class="flex text-med-green mb-2">★★★★★</div>
-                        <p class="text-gray-300 text-sm mb-3">"Eu estava travada nos 70% de acerto. Com o método do Dr. Marcos, fui para 92% em 3 meses."</p>
-                        <p class="text-gray-500 text-xs font-bold uppercase">- Roberto S., Aprovado no Ceará</p>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal Garantia -->
-    <div id="modal-garantia" class="modal-overlay fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/90 backdrop-blur-sm" onclick="closeModals(event)">
-        <div class="modal-content bg-tech-card border border-gray-800 w-full max-w-md rounded-2xl relative shadow-neon overflow-hidden" onclick="event.stopPropagation()">
-            <div class="p-8 text-center">
-                <div class="w-16 h-16 bg-med-green/10 rounded-full flex items-center justify-center mx-auto mb-4 text-med-green">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
-                </div>
-                <h3 class="text-2xl font-serif font-bold text-white mb-4">Risco Zero Absoluto</h3>
-                <p class="text-gray-300 text-sm mb-6">Você tem <strong>7 dias</strong> para testar a plataforma. Assista às aulas, use o banco de questões. Se não sentir que sua aprovação está mais próxima, basta um e-mail e devolvo 100% do seu dinheiro. Sem perguntas.</p>
-                <button onclick="closeAllModals()" class="bg-gray-800 hover:bg-white hover:text-black text-white px-6 py-2 rounded-lg font-bold text-sm transition">Entendi</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal Termos -->
-    <div id="modal-termos" class="modal-overlay fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/90 backdrop-blur-sm" onclick="closeModals(event)">
-        <div class="modal-content bg-tech-card border border-gray-800 w-full max-w-2xl rounded-2xl relative shadow-neon overflow-hidden" onclick="event.stopPropagation()">
-            <div class="p-8">
-                <div class="flex justify-between items-start mb-6">
-                    <h3 class="text-2xl font-serif font-bold text-white">Termos de Uso</h3>
-                    <button onclick="closeAllModals()" class="text-gray-500 hover:text-white"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button>
-                </div>
-                <div class="space-y-4 text-gray-400 text-xs leading-relaxed max-h-[60vh] overflow-y-auto pr-2 text-justify">
-                    <p>1. O acesso ao curso é pessoal e intransferível. O compartilhamento de senha resultará no bloqueio imediato da conta sem reembolso.</p>
-                    <p>2. Todo o material didático é protegido por direitos autorais. É proibida a reprodução, distribuição ou comercialização do conteúdo.</p>
-                    <p>3. O suporte ao aluno é fornecido via e-mail e plataforma dedicada, com prazo de resposta de até 48 horas úteis.</p>
-                    <p>4. A garantia de 7 dias começa a contar a partir da data da confirmação do pagamento.</p>
-                    <p>5. O Dr. Marcos Leoncio se reserva o direito de atualizar o conteúdo do curso para garantir que esteja alinhado com as últimas exigências das bancas examinadoras.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- ==================== MODAIS DE CHECKOUT (BRANCOS) ==================== -->
-
-    <!-- Modal Checkout (BRANCO) -->
+    <!-- Modal Checkout -->
     <div id="modal-checkout" class="modal-overlay fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/90 backdrop-blur-md">
         <div class="modal-content bg-white w-full max-w-md rounded-2xl relative shadow-2xl overflow-hidden">
             <div class="bg-gray-50 p-5 border-b border-gray-100 flex justify-between items-center">
@@ -491,16 +437,12 @@
                         <span>Ir para Pagamento</span>
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                     </button>
-                    
-                    <div class="text-center mt-4">
-                        <p class="text-xs text-gray-400 flex justify-center items-center gap-1"><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg> Dados protegidos SSL</p>
-                    </div>
                 </form>
             </div>
         </div>
     </div>
 
-    <!-- Modal Pix (BRANCO) -->
+    <!-- Modal Pix (COM TITULAR ATUALIZADO) -->
     <div id="modal-pix" class="modal-overlay fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/90 backdrop-blur-md">
         <div class="modal-content bg-white w-full max-w-md rounded-2xl relative shadow-2xl overflow-hidden text-center">
             <div class="bg-orange-50 border-b border-orange-100 p-3">
@@ -526,14 +468,23 @@
                     <p class="text-4xl font-serif font-bold text-gray-900">R$ 197,00</p>
                 </div>
 
-                <div class="bg-white border border-gray-200 rounded-xl p-4 mb-4 flex items-center justify-between group hover:border-green-500 transition shadow-sm">
-                    <div class="text-left overflow-hidden">
-                        <p class="text-[10px] text-gray-400 uppercase font-bold tracking-wider mb-1">Chave PIX (CPF)</p>
-                        <p class="text-gray-900 font-mono text-sm truncate font-bold">081.904.013-43</p>
+                <!-- Box de Informações do Pix Reestruturado -->
+                <div class="bg-white border border-gray-200 rounded-xl p-4 mb-4 text-left group hover:border-green-500 transition shadow-sm">
+                    <div class="flex items-center justify-between mb-3">
+                        <div class="overflow-hidden">
+                            <p class="text-[10px] text-gray-400 uppercase font-bold tracking-wider mb-1">Chave PIX (CPF)</p>
+                            <p class="text-gray-900 font-mono text-sm truncate font-bold">081.904.013-43</p>
+                        </div>
+                        <button onclick="copyPix()" class="bg-gray-100 hover:bg-green-600 hover:text-white text-gray-600 p-2.5 rounded-lg transition duration-300">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                        </button>
                     </div>
-                    <button onclick="copyPix()" class="bg-gray-100 hover:bg-green-600 hover:text-white text-gray-600 p-2.5 rounded-lg transition duration-300">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
-                    </button>
+                    
+                    <!-- Novo campo de Titular solicitado -->
+                    <div class="pt-3 border-t border-gray-100">
+                        <p class="text-[10px] text-gray-400 uppercase font-bold tracking-wider mb-1">Titular da Conta</p>
+                        <p class="text-gray-900 text-sm font-bold uppercase">Brenda do Nascimento Silveira</p>
+                    </div>
                 </div>
 
                 <button onclick="copyPix()" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-4 rounded-xl uppercase tracking-wide shadow-lg mb-2 transition transform hover:scale-[1.02]">
@@ -558,7 +509,6 @@
         const phoneInput = document.getElementById('phone');
         let timerInterval;
 
-        // Máscara de Telefone
         phoneInput.addEventListener('input', function (e) {
             let value = e.target.value.replace(/\D/g, '');
             if (value.length > 11) value = value.slice(0, 11);
@@ -568,7 +518,6 @@
             e.target.value = value;
         });
 
-        // Controle de Modais
         function openModal(modalId) {
             document.getElementById(modalId).classList.add('active');
         }
@@ -628,9 +577,8 @@
             }, 1000);
         }
 
-        // Timer do Topo (Loop Infinito Visual)
         function startTopTimer() {
-            let timer = 600; // 10 min
+            let timer = 600;
             const display = document.getElementById('top-countdown');
             setInterval(function () {
                 let minutes = parseInt(timer / 60, 10);
